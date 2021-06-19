@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 
 # loading the trained model
-pickle_in = open('C:/Users/708788/OneDrive - Cognizant/Desktop/Machine Learning/Hotel Reviews Sentiment Analysis/classifier.pkl', 'rb')
+pickle_in = open('classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 def predict_hotel_review(description):
